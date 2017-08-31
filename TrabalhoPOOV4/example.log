@@ -1,0 +1,228 @@
+2017-08-04 DEBUG [AWT-EventQueue-0] (LoadPlanTreePrinter.java:72) - LoadPlan(entity=model.Consulta)
+    - Returns
+       - EntityReturnImpl(entity=model.Consulta, querySpaceUid=<gen:0>, path=model.Consulta)
+          - EntityAttributeFetchImpl(entity=model.Paciente, querySpaceUid=<gen:1>, path=model.Consulta.paciente)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=model.Consulta)
+          - SQL table alias mapping - consulta0_
+          - alias suffix - 0_
+          - suffixed key columns - {codigo1_0_0_}
+
+2017-08-04 DEBUG [AWT-EventQueue-0] (EntityLoader.java:146) - Static select for entity model.Consulta [OPTIMISTIC_FORCE_INCREMENT]: select consulta0_.codigo as codigo1_0_0_, consulta0_.dataConsulta as dataCons2_0_0_, consulta0_.hora as hora3_0_0_, consulta0_.medico as medico4_0_0_, consulta0_.paciente_cpf as paciente6_0_0_, consulta0_.tipoConsulta as tipoCons5_0_0_ from Consulta consulta0_ where consulta0_.codigo=?
+2017-08-04 DEBUG [AWT-EventQueue-0] (CascadeEntityLoader.java:56) - Static select for action ACTION_MERGE on entity model.Consulta: select consulta0_.codigo as codigo1_0_0_, consulta0_.dataConsulta as dataCons2_0_0_, consulta0_.hora as hora3_0_0_, consulta0_.medico as medico4_0_0_, consulta0_.paciente_cpf as paciente6_0_0_, consulta0_.tipoConsulta as tipoCons5_0_0_ from Consulta consulta0_ where consulta0_.codigo=?
+2017-08-04 DEBUG [AWT-EventQueue-0] (CascadeEntityLoader.java:56) - Static select for action ACTION_REFRESH on entity model.Consulta: select consulta0_.codigo as codigo1_0_1_, consulta0_.dataConsulta as dataCons2_0_1_, consulta0_.hora as hora3_0_1_, consulta0_.medico as medico4_0_1_, consulta0_.paciente_cpf as paciente6_0_1_, consulta0_.tipoConsulta as tipoCons5_0_1_, paciente1_.cpf as cpf1_1_0_, paciente1_.alergias as alergias2_1_0_, paciente1_.bebe as bebe3_1_0_, paciente1_.cidade as cidade4_1_0_, paciente1_.cirurgias as cirurgia5_1_0_, paciente1_.colesterol as colester6_1_0_, paciente1_.complemento as compleme7_1_0_, paciente1_.convenio as convenio8_1_0_, paciente1_.dCardiaca as dCardiac9_1_0_, paciente1_.dataNascimento as dataNas10_1_0_, paciente1_.diabete as diabete11_1_0_, paciente1_.diagnostico as diagnos12_1_0_, paciente1_.email as email13_1_0_, paciente1_.endereco as enderec14_1_0_, paciente1_.estado as estado15_1_0_, paciente1_.fuma as fuma16_1_0_, paciente1_.nome as nome17_1_0_, paciente1_.numeroCasa as numeroC18_1_0_, paciente1_.sintomas as sintoma19_1_0_, paciente1_.telefone as telefon20_1_0_, paciente1_.tratamento as tratame21_1_0_ from Consulta consulta0_ left outer join Paciente paciente1_ on consulta0_.paciente_cpf=paciente1_.cpf where consulta0_.codigo=?
+2017-08-04 DEBUG [AWT-EventQueue-0] (SessionFactoryRegistry.java:67) - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7a7a0fd9
+2017-08-04 DEBUG [AWT-EventQueue-0] (SessionFactoryRegistry.java:89) - Registering SessionFactory: 862d00bb-597b-480e-af68-8217e76be990 (<unnamed>)
+2017-08-04 DEBUG [AWT-EventQueue-0] (SessionFactoryRegistry.java:96) - Not binding SessionFactory to JNDI, no JNDI name configured
+2017-08-04 DEBUG [AWT-EventQueue-0] (SessionFactoryImpl.java:504) - Instantiated session factory
+2017-08-04  INFO [AWT-EventQueue-0] (SchemaUpdate.java:182) - HHH000228: Running hbm2ddl schema update
+2017-08-04  INFO [AWT-EventQueue-0] (SchemaUpdate.java:193) - HHH000102: Fetching database metadata
+2017-08-04  INFO [AWT-EventQueue-0] (SchemaUpdate.java:205) - HHH000396: Updating schema
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:3750) - Processing hbm.xml files
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:3780) - Process annotated classes
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1482) - Processing fk mappings (*ToOne and JoinedSubclass)
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1687) - Processing extends queue
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1745) - Processing extends queue
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1690) - Processing collection mappings
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1700) - Processing native query and ResultSetMapping mappings
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1708) - Processing association property references
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1730) - Creating tables' unique integer identifiers
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1731) - Processing foreign key constraints
+2017-08-04 DEBUG [AWT-EventQueue-0] (Configuration.java:1802) - Resolving reference to class: model.Paciente
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:66) - HHH000261: Table found: .APP.CONSULTA
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:67) - HHH000037: Columns: [paciente_cpf, codigo, dataconsulta, hora, medico, tipoconsulta]
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:69) - HHH000108: Foreign keys: [fk_bimrjycwfwal3cp8s5muggdot]
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:70) - HHH000126: Indexes: [sql170804151255990, sql170804151256090]
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:66) - HHH000261: Table found: .APP.PACIENTE
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:67) - HHH000037: Columns: [cidade, estado, telefone, endereco, colesterol, bebe, convenio, nome, cirurgias, dcardiaca, datanascimento, sintomas, alergias, diabete, complemento, fuma, numerocasa, diagnostico, cpf, tratamento, email]
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:69) - HHH000108: Foreign keys: []
+2017-08-04  INFO [AWT-EventQueue-0] (TableMetadata.java:70) - HHH000126: Indexes: [sql170804151256060]
+2017-08-04 DEBUG [AWT-EventQueue-0] (DefaultIdentifierGeneratorFactory.java:107) - Setting dialect [org.hibernate.dialect.DerbyTenSevenDialect]
+2017-08-04 DEBUG [AWT-EventQueue-0] (DefaultIdentifierGeneratorFactory.java:107) - Setting dialect [org.hibernate.dialect.DerbyTenSevenDialect]
+2017-08-04  INFO [AWT-EventQueue-0] (SchemaUpdate.java:242) - HHH000232: Schema update complete
+2017-08-04 DEBUG [AWT-EventQueue-0] (NamedQueryRepository.java:155) - Checking 0 named HQL queries
+2017-08-04 DEBUG [AWT-EventQueue-0] (NamedQueryRepository.java:171) - Checking 0 named SQL queries
+2017-08-04 DEBUG [AWT-EventQueue-0] (StatisticsInitiator.java:110) - Statistics initialized [enabled=false]
+2017-08-04 DEBUG [AWT-EventQueue-0] (JpaSchemaGenerator.java:115) - No actions specified; doing nothing
+2017-08-04 DEBUG [AWT-EventQueue-0] (EntityManagerFactoryRegistry.java:56) - Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@2c16e1a3
+2017-08-04 DEBUG [AWT-EventQueue-0] (EntityManagerFactoryRegistry.java:66) - Registering EntityManagerFactory: PU 
+2017-08-04 DEBUG [AWT-EventQueue-0] (QueryTranslatorImpl.java:294) - parse() - HQL: SELECT ob FROM model.Paciente  ob
+2017-08-04 DEBUG [AWT-EventQueue-0] (QueryTranslatorImpl.java:312) - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Paciente'
+       |     \-[ALIAS] Node: 'ob'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'ob'
+
+2017-08-04 DEBUG [AWT-EventQueue-0] (ErrorCounter.java:113) - throwQueryException() : no errors
+2017-08-04 DEBUG [AWT-EventQueue-0] (HqlSqlBaseWalker.java:121) - select << begin [level=1, statement=select]
+2017-08-04 DEBUG [AWT-EventQueue-0] (FromElement.java:158) - FromClause{level=1} : model.Paciente (ob) -> paciente0_
+2017-08-04 DEBUG [AWT-EventQueue-0] (FromReferenceNode.java:77) - Resolved : ob -> paciente0_.cpf
+2017-08-04 DEBUG [AWT-EventQueue-0] (HqlSqlBaseWalker.java:125) - select : finishing up [level=1, statement=select]
+2017-08-04 DEBUG [AWT-EventQueue-0] (HqlSqlWalker.java:664) - processQuery() :  ( SELECT ( {select clause} paciente0_.cpf ) ( FromClause{level=1} Paciente paciente0_ ) )
+2017-08-04 DEBUG [AWT-EventQueue-0] (JoinProcessor.java:187) - Using FROM fragment [Paciente paciente0_]
+2017-08-04 DEBUG [AWT-EventQueue-0] (HqlSqlBaseWalker.java:129) - select >> end [level=1, statement=select]
+2017-08-04 DEBUG [AWT-EventQueue-0] (QueryTranslatorImpl.java:281) - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Paciente)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'paciente0_.cpf as cpf1_1_' {alias=ob, className=model.Paciente, tableAlias=paciente0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'paciente0_.alergias as alergias2_1_, paciente0_.bebe as bebe3_1_, paciente0_.cidade as cidade4_1_, paciente0_.cirurgias as cirurgia5_1_, paciente0_.colesterol as colester6_1_, paciente0_.complemento as compleme7_1_, paciente0_.convenio as convenio8_1_, paciente0_.dCardiaca as dCardiac9_1_, paciente0_.dataNascimento as dataNas10_1_, paciente0_.diabete as diabete11_1_, paciente0_.diagnostico as diagnos12_1_, paciente0_.email as email13_1_, paciente0_.endereco as enderec14_1_, paciente0_.estado as estado15_1_, paciente0_.fuma as fuma16_1_, paciente0_.nome as nome17_1_, paciente0_.numeroCasa as numeroC18_1_, paciente0_.sintomas as sintoma19_1_, paciente0_.telefone as telefon20_1_, paciente0_.tratamento as tratame21_1_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[ob], fromElementByTableAlias=[paciente0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Paciente paciente0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=ob,role=null,tableName=Paciente,tableAlias=paciente0_,origin=null,columns={,className=model.Paciente}}
+
+2017-08-04 DEBUG [AWT-EventQueue-0] (ErrorCounter.java:113) - throwQueryException() : no errors
+2017-08-04 DEBUG [AWT-EventQueue-0] (QueryTranslatorImpl.java:263) - HQL: SELECT ob FROM model.Paciente  ob
+2017-08-04 DEBUG [AWT-EventQueue-0] (QueryTranslatorImpl.java:264) - SQL: select paciente0_.cpf as cpf1_1_, paciente0_.alergias as alergias2_1_, paciente0_.bebe as bebe3_1_, paciente0_.cidade as cidade4_1_, paciente0_.cirurgias as cirurgia5_1_, paciente0_.colesterol as colester6_1_, paciente0_.complemento as compleme7_1_, paciente0_.convenio as convenio8_1_, paciente0_.dCardiaca as dCardiac9_1_, paciente0_.dataNascimento as dataNas10_1_, paciente0_.diabete as diabete11_1_, paciente0_.diagnostico as diagnos12_1_, paciente0_.email as email13_1_, paciente0_.endereco as enderec14_1_, paciente0_.estado as estado15_1_, paciente0_.fuma as fuma16_1_, paciente0_.nome as nome17_1_, paciente0_.numeroCasa as numeroC18_1_, paciente0_.sintomas as sintoma19_1_, paciente0_.telefone as telefon20_1_, paciente0_.tratamento as tratame21_1_ from Paciente paciente0_
+2017-08-04 DEBUG [AWT-EventQueue-0] (ErrorCounter.java:113) - throwQueryException() : no errors
+2017-08-04 DEBUG [AWT-EventQueue-0] (SqlStatementLogger.java:109) - select paciente0_.cpf as cpf1_1_, paciente0_.alergias as alergias2_1_, paciente0_.bebe as bebe3_1_, paciente0_.cidade as cidade4_1_, paciente0_.cirurgias as cirurgia5_1_, paciente0_.colesterol as colester6_1_, paciente0_.complemento as compleme7_1_, paciente0_.convenio as convenio8_1_, paciente0_.dCardiaca as dCardiac9_1_, paciente0_.dataNascimento as dataNas10_1_, paciente0_.diabete as diabete11_1_, paciente0_.diagnostico as diagnos12_1_, paciente0_.email as email13_1_, paciente0_.endereco as enderec14_1_, paciente0_.estado as estado15_1_, paciente0_.fuma as fuma16_1_, paciente0_.nome as nome17_1_, paciente0_.numeroCasa as numeroC18_1_, paciente0_.sintomas as sintoma19_1_, paciente0_.telefone as telefon20_1_, paciente0_.tratamento as tratame21_1_ from Paciente paciente0_
+2017-08-04 DEBUG [AWT-EventQueue-0] (LogicalConnectionImpl.java:226) - Obtaining JDBC connection
+2017-08-04 DEBUG [AWT-EventQueue-0] (LogicalConnectionImpl.java:232) - Obtained JDBC connection
+2017-08-04 DEBUG [AWT-EventQueue-0] (Loader.java:951) - Result set row: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (Loader.java:1485) - Result row: EntityKey[model.Paciente#90979786]
+2017-08-04 DEBUG [AWT-EventQueue-0] (TwoPhaseLoad.java:160) - Resolving associations for [model.Paciente#90979786]
+2017-08-04 DEBUG [AWT-EventQueue-0] (TwoPhaseLoad.java:286) - Done materializing entity [model.Paciente#90979786]
+2017-08-04 DEBUG [AWT-EventQueue-0] (SqlStatementLogger.java:109) - select paciente0_.cpf as cpf1_1_, paciente0_.alergias as alergias2_1_, paciente0_.bebe as bebe3_1_, paciente0_.cidade as cidade4_1_, paciente0_.cirurgias as cirurgia5_1_, paciente0_.colesterol as colester6_1_, paciente0_.complemento as compleme7_1_, paciente0_.convenio as convenio8_1_, paciente0_.dCardiaca as dCardiac9_1_, paciente0_.dataNascimento as dataNas10_1_, paciente0_.diabete as diabete11_1_, paciente0_.diagnostico as diagnos12_1_, paciente0_.email as email13_1_, paciente0_.endereco as enderec14_1_, paciente0_.estado as estado15_1_, paciente0_.fuma as fuma16_1_, paciente0_.nome as nome17_1_, paciente0_.numeroCasa as numeroC18_1_, paciente0_.sintomas as sintoma19_1_, paciente0_.telefone as telefon20_1_, paciente0_.tratamento as tratame21_1_ from Paciente paciente0_
+2017-08-04 DEBUG [AWT-EventQueue-0] (Loader.java:951) - Result set row: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (Loader.java:1485) - Result row: EntityKey[model.Paciente#90979786]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: false
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Boolean' value 'false' to type 'Boolean'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Boolean
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Byte'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Byte value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value:  
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Character' value ' ' to type 'Character'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Character
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Double'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Double value '0.0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Float'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Float value '0.0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Integer'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Integer
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Long'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Long value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Short'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Short value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0.0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a BigDecimal
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'BigInteger' value '0' to type 'BigInteger'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a BigInteger
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: false
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Boolean' value 'false' to type 'Boolean'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Boolean
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Byte'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Byte value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value:  
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Character' value ' ' to type 'Character'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Character
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Double'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Double value '0.0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Float'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Float value '0.0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Integer'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Integer
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Long'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Long value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 0
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer' value '0' to type 'Short'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:171) -     Converted to Short value '0'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: 
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'String' value '' to type 'String'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Z@19ebe4fe
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'boolean[]' value '[Z@19ebe4fe' to type 'boolean[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a boolean[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [B@2e0643f2
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'byte[]' value '[B@2e0643f2' to type 'byte[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a byte[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [C@6be6485a
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'char[]' value '[C@6be6485a' to type 'char[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a char[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [D@1d84682
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'double[]' value '[D@1d84682' to type 'double[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a double[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [F@34e66705
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'float[]' value '[F@34e66705' to type 'float[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a float[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [I@5bafc664
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'int[]' value '[I@5bafc664' to type 'int[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a int[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [J@1aa41df3
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'long[]' value '[J@1aa41df3' to type 'long[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a long[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [S@17c4d130
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'short[]' value '[S@17c4d130' to type 'short[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a short[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.math.BigDecimal;@7cb5b331
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@7cb5b331' to type 'BigDecimal[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a BigDecimal[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.math.BigInteger;@720a1977
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@720a1977' to type 'BigInteger[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a BigInteger[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Boolean;@29b8acf4
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@29b8acf4' to type 'Boolean[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Boolean[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Byte;@3ba082ab
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Byte[]' value '[Ljava.lang.Byte;@3ba082ab' to type 'Byte[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Byte[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Character;@6d9476e2
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Character[]' value '[Ljava.lang.Character;@6d9476e2' to type 'Character[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Character[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Double;@329a4561
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Double[]' value '[Ljava.lang.Double;@329a4561' to type 'Double[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Double[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Float;@74370009
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Float[]' value '[Ljava.lang.Float;@74370009' to type 'Float[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Float[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Integer;@7ef823d1
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Integer[]' value '[Ljava.lang.Integer;@7ef823d1' to type 'Integer[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Integer[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Long;@3ccffbda
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Long[]' value '[Ljava.lang.Long;@3ccffbda' to type 'Long[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Long[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Short;@429666fe
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Short[]' value '[Ljava.lang.Short;@429666fe' to type 'Short[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Short[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.String;@31439ec6
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'String[]' value '[Ljava.lang.String;@31439ec6' to type 'String[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a String[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.lang.Class;@3155058e
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Class[]' value '[Ljava.lang.Class;@3155058e' to type 'Class[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Class[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.util.Date;@59e87c31
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Date[]' value '[Ljava.util.Date;@59e87c31' to type 'Date[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Date[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.util.Calendar;@3812ae42
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'Calendar[]' value '[Ljava.util.Calendar;@3812ae42' to type 'Calendar[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a Calendar[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.io.File;@7d34aed3
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'java.io.File[]' value '[Ljava.io.File;@7d34aed3' to type 'java.io.File[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a java.io.File[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.sql.Date;@7e753b59
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@7e753b59' to type 'java.sql.Date[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a java.sql.Date[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.sql.Time;@4d74e215
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@4d74e215' to type 'java.sql.Time[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a java.sql.Time[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.sql.Timestamp;@49af112b
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@49af112b' to type 'java.sql.Timestamp[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a java.sql.Timestamp[]
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:353) - Setting default value: [Ljava.net.URL;@654fd5d7
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:140) - Converting 'java.net.URL[]' value '[Ljava.net.URL;@654fd5d7' to type 'java.net.URL[]'
+2017-08-04 DEBUG [AWT-EventQueue-0] (AbstractConverter.java:162) -     No conversion required, value is already a java.net.URL[]
